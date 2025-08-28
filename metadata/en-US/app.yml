@@ -4,7 +4,7 @@ Categories:
 
 License: GPL-3.0-only
 
-AuthorName: IReDroid Contributors
+AuthorName: 0x1c1101
 AuthorEmail: 
 
 WebSite: 
@@ -42,3 +42,4 @@ AutoUpdateMode: Version v%v
 UpdateCheckMode: Tags
 CurrentVersion: 1.0.0
 CurrentVersionCode: 1
+
