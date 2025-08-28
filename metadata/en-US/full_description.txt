@@ -1,0 +1,36 @@
+IReDroid is a free and open-source infrared remote control application that transforms your Android device into a universal remote control. Control TVs, air conditioners, set-top boxes, and other infrared-controlled devices using your phone's built-in IR blaster.
+
+<b>Key Features:</b>
+• Universal remote control for IR devices
+• Support for multiple protocols (NEC, RC5, RC6, Samsung32, Raw)
+• Create and customize remote control layouts
+• Import remotes from Flipper Zero IR database
+• IR fuzzing for code discovery and device testing
+• Modern Material Design interface
+• Completely free with no ads or tracking
+
+<b>Supported Protocols:</b>
+• NEC - Most common protocol used by many manufacturers
+• NECext - Extended NEC protocol for enhanced functionality
+• Samsung32 - Samsung-specific 32-bit protocol
+• RC5 - Philips RC5 protocol with Manchester encoding
+• RC6 - Philips RC6 protocol with advanced features
+• Raw - Custom timing patterns for unsupported protocols
+
+<b>Advanced Features:</b>
+• IR Fuzzing - Systematically test code ranges to discover working commands
+• Brute force testing for unknown devices and protocols
+• Code discovery tools for reverse engineering remote controls
+• Protocol analysis and timing validation
+
+<b>Privacy Focused:</b>
+IReDroid respects your privacy with no internet permissions, no data collection, and no tracking. The app works completely offline and only requests the IR transmitter permission needed for functionality.
+
+<b>Requirements:</b>
+• Android device with infrared (IR) blaster
+• Android 5.0 (API level 21) or higher
+• IR transmitter hardware support
+
+The app automatically detects if your device has an IR blaster and provides clear feedback about compatibility. Simply point your device at the target appliance and control it just like a traditional remote control.
+
+Perfect for users who want to consolidate their remote controls, replace lost/broken remotes, or discover new IR codes through systematic fuzzing and testing.

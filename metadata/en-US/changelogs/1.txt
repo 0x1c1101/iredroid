@@ -1,0 +1,9 @@
+• Initial release of IReDroid
+• Universal infrared remote control functionality
+• Support for NEC, NECext, Samsung32, RC5, RC6 protocols
+• Raw IR data support for custom protocols
+• Custom remote control creation and editing
+• Flipper Zero IR database compatibility
+• Material Design user interface
+• Privacy-focused offline operation
+• No ads, no tracking, completely free and open source

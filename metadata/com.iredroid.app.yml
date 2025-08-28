@@ -1,0 +1,79 @@
+Categories:
+  - Multimedia
+  - System
+
+License: GPL-3.0-only
+
+AuthorName: IReDroid Contributors
+
+WebSite: https://github.com/yourusername/iredroid
+SourceCode: https://github.com/yourusername/iredroid
+IssueTracker: https://github.com/yourusername/iredroid/issues
+
+Summary: Universal infrared remote control app with fuzzing capabilities
+
+Description: |-
+    IReDroid is a free and open-source infrared remote control application that transforms your Android device into a universal remote control. Control TVs, air conditioners, set-top boxes, and other infrared-controlled devices using your phone's built-in IR blaster.
+
+    <b>Key Features:</b>
+    * Universal remote control for IR devices
+    * Support for multiple protocols (NEC, RC5, RC6, Samsung32, Raw)
+    * Create and customize remote control layouts
+    * Import remotes from Flipper Zero IR database
+    * IR fuzzing for code discovery and device testing
+    * Modern Material Design interface
+    * Completely free with no ads or tracking
+
+    <b>Supported Protocols:</b>
+    * NEC - Most common protocol used by many manufacturers
+    * NECext - Extended NEC protocol for enhanced functionality
+    * Samsung32 - Samsung-specific 32-bit protocol
+    * RC5 - Philips RC5 protocol with Manchester encoding
+    * RC6 - Philips RC6 protocol with advanced features
+    * Raw - Custom timing patterns for unsupported protocols
+
+    <b>Privacy Focused:</b>
+    IReDroid respects your privacy with no internet permissions, no data collection, and no tracking. The app works completely offline and only requests the IR transmitter permission needed for functionality.
+
+    <b>Requirements:</b>
+    * Android device with infrared (IR) blaster
+    * Android 5.0 (API level 21) or higher
+    * IR transmitter hardware support
+
+    The app automatically detects if your device has an IR blaster and provides clear feedback about compatibility. Simply point your device at the target appliance and control it just like a traditional remote control.
+
+RepoType: git
+Repo: https://github.com/yourusername/iredroid
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    subdir: iredroid
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-11-jdk-headless
+      - update-alternatives --auto java
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@3.22.2
+    rm:
+      - ios
+      - linux
+      - macos
+      - web
+      - windows
+    prebuild:
+      - export REPO_ROOT=$(pwd)
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+    build:
+      - export REPO_ROOT=$(pwd)
+      - export PUB_CACHE=$(pwd)/.pub-cache
+      - $$flutter$$/bin/flutter build apk --release
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1

@@ -1,0 +1,44 @@
+Categories:
+- Multimedia
+- System
+
+License: GPL-3.0-only
+
+AuthorName: IReDroid Contributors
+AuthorEmail: 
+
+WebSite: 
+SourceCode: https://github.com/0x1c1101/iredroid
+IssueTracker: https://github.com/0x1c1101/iredroid/issues
+
+Summary: Universal infrared remote control app for Android
+
+Description:
+IReDroid is a free and open-source infrared remote control application that transforms your Android device into a universal remote control. Control TVs, air conditioners, set-top boxes, and other infrared-controlled devices using your phone's built-in IR blaster.
+
+The app supports multiple IR protocols including NEC, NECext, Samsung32, RC5, RC6, and raw data formats, making it compatible with a wide range of devices. Users can create custom remote layouts, import remotes from the Flipper Zero database, and enjoy a modern Material Design interface.
+
+Privacy-focused with no internet permissions, no data collection, and no tracking. The app works completely offline and only requests the IR transmitter permission needed for functionality.
+
+RepoType: git
+Repo: https://github.com/0x1c1101/iredroid
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: v1.0.0
+    subdir: 
+    gradle:
+      - yes
+    output: build/app/outputs/flutter-apk/app-release.apk
+    srclibs:
+      - flutter@stable
+    prebuild:
+      - $$flutter$$/bin/flutter config --no-analytics
+      - $$flutter$$/bin/flutter packages pub get
+      - $$flutter$$/bin/flutter build apk --release --no-sound-null-safety
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
