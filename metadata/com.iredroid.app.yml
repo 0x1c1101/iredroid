@@ -6,9 +6,9 @@ License: GPL-3.0-only
 
 AuthorName: IReDroid Contributors
 
-WebSite: https://github.com/yourusername/iredroid
-SourceCode: https://github.com/yourusername/iredroid
-IssueTracker: https://github.com/yourusername/iredroid/issues
+WebSite: https://github.com/0x1c1101/iredroid
+SourceCode: https://github.com/0x1c1101/iredroid
+IssueTracker: https://github.com/0x1c1101/iredroid/issues
 
 Summary: Universal infrared remote control app with fuzzing capabilities
 
@@ -43,7 +43,7 @@ Description: |-
     The app automatically detects if your device has an IR blaster and provides clear feedback about compatibility. Simply point your device at the target appliance and control it just like a traditional remote control.
 
 RepoType: git
-Repo: https://github.com/yourusername/iredroid
+Repo: https://github.com/0x1c1101/iredroid
 
 Builds:
   - versionName: 1.0.0

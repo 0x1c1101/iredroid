@@ -14,7 +14,7 @@ This directory contains the F-Droid metadata for IReDroid submission.
 
 Please update the following placeholders in `app.yml`:
 
-1. **Repository URLs**: Replace `https://github.com/yourusername/iredroid` with your actual repository
+1. **Repository URLs**: Replace `https://github.com/0x1c1101/iredroid` with your actual repository
 2. **Author Information**: Add proper author name and email
 3. **Website**: Add project website if available
 4. **Git Commit Tags**: Ensure version tags exist in your repository
