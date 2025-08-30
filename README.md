@@ -3,6 +3,11 @@
 IReDroid is a free and open-source infrared remote control application for Android devices with IR blasters. Turn your Android device into a universal remote control for TVs, air conditioners, set-top boxes, and other infrared-controlled devices.
 
 <img width="340" height="auto" alt="image" src="https://github.com/user-attachments/assets/3c237693-be8a-460c-82f8-3e36d9aad9ea" />
+<br>
+<img width="340" height="auto" alt="image" src="https://github.com/user-attachments/assets/d3505c35-449e-4f89-a488-41c2847490d9" />
+<br>
+<img width="340" height="auto" alt="image" src="https://github.com/user-attachments/assets/9cf54212-94a1-4892-92f1-c873a24eccfb" />
+
 
 ## Features
 
