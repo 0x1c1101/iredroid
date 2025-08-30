@@ -1,4 +1,4 @@
-# IReDroid - Open Source IR Remote Control
+# IReDroid - Android Infrared Fuzzer
 
 IReDroid is a free and open-source infrared remote control application for Android devices with IR blasters. Turn your Android device into a universal remote control for TVs, air conditioners, set-top boxes, and other infrared-controlled devices.
 
