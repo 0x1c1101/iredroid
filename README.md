@@ -11,21 +11,18 @@ IReDroid is a free and open-source infrared remote control application for Andro
 
 ## Features
 
-- 📱 **Universal Remote Control**: Control various IR devices using your Android's built-in IR blaster
-- 🔧 **Multiple Protocol Support**: Supports NEC, NECext, Samsung32, RC5, RC6, and raw IR data
-- 📂 **Custom Remote Creation**: Create and edit custom remote control layouts
-- 🗃️ **Flipper Zero Compatibility**: Import remote controls from Flipper Zero IR database
-- 🎨 **Modern UI**: Clean, intuitive Material Design interface
-- 🆓 **Free & Open Source**: No ads, no tracking, completely free
+- You can add/modify/implement custom remotes.
+- IReDroid uses Flipper Zero's database and has 1700+ devices.
+- You can fuzz devices in a category.
 
 ## Supported IR Protocols
 
 - **NEC**: Most common protocol used by many manufacturers
 - **NECext**: Extended NEC protocol
-- **Samsung32**: Samsung-specific 32-bit protocol
-- **RC5**: Philips RC5 protocol with Manchester encoding
-- **RC6**: Philips RC6 protocol with enhanced features
 - **Raw**: Custom timing patterns for unsupported protocols
+
+- **RC5**: Doesn't work properly. (Need to fix)
+- **RC6**: Doesn't work properly. (Need to fix)
 
 ## Requirements
 
@@ -35,7 +32,7 @@ IReDroid is a free and open-source infrared remote control application for Andro
 
 ## Installation
 
-### From F-Droid (Recommended)
+### From F-Droid (Not available yet)
 1. Add the F-Droid repository
 2. Search for "IReDroid"
 3. Install the app
@@ -45,14 +42,6 @@ IReDroid is a free and open-source infrared remote control application for Andro
 2. Open in Android Studio or VS Code
 3. Run `flutter build apk --release`
 4. Install the generated APK
-
-## Usage
-
-1. **Check IR Support**: The app will automatically detect if your device has an IR blaster
-2. **Create Remote**: Add a new remote control by selecting device type and brand
-3. **Import from Flipper**: Load remote controls from Flipper Zero IR database
-4. **Test Buttons**: Use the test function to verify IR transmission
-5. **Control Devices**: Point your device at the target and press buttons
 
 ## Building from Source
 
@@ -77,13 +66,6 @@ flutter pub run flutter_launcher_icons:main
 flutter build apk --release
 ```
 
-## Privacy & Permissions
-
-IReDroid respects your privacy:
-- **No internet permission**: The app works completely offline
-- **No data collection**: No analytics, tracking, or data collection
-- **Minimal permissions**: Only requests IR transmitter permission
-
 ### Required Permissions
 - `android.permission.TRANSMIT_IR`: Required to send infrared signals
 
@@ -106,9 +88,7 @@ IReDroid is provided "as is" without warranty. Use at your own risk. The develop
 ## Compatibility
 
 Tested on devices with IR blasters including:
-- Samsung Galaxy series
 - Xiaomi phones with IR blaster
-- OnePlus devices with IR support
 
 ## Support
 
